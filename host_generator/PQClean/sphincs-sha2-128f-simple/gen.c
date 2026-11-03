@@ -26,7 +26,7 @@ int main() {
     uint8_t sig[PQCLEAN_SPHINCSSHA2128FSIMPLE_CLEAN_CRYPTO_BYTES];
     size_t sig_len;
 
-    uint8_t msg[] = "Mensagem TCC ESP32";
+    uint8_t msg[] = "Hello World";
     size_t msg_len = strlen((char *)msg);
 
     PQCLEAN_SPHINCSSHA2128FSIMPLE_CLEAN_crypto_sign_keypair(pk, sk);
